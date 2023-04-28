@@ -1,0 +1,30 @@
+{
+  "name": "modal-apo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sophapojul/modal-apo.git"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "A simple modal component for React",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.2"
+  }
+}
