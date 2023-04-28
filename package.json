@@ -1,18 +1,27 @@
 {
-  "name": "modal-apo",
+  "name": "modal-a",
   "repository": {
     "type": "git",
     "url": "https://github.com/sophapojul/modal-apo.git"
+  },
+  "author": {
+    "name": "Pascal Allau",
+    "email": "pascal.allau@zohomail.eu"
   },
   "license": "MIT",
   "version": "0.0.1",
   "description": "A simple modal component for React",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "modal","alert","confirm","popup","dialog","react"
   ],
   "scripts": {
     "build": "tsup src/index.tsx --format cjs,esm --dts"
