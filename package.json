@@ -1,5 +1,5 @@
 {
-  "name": "@apojul/modal-a",
+  "name": "modal-apo",
   "repository": {
     "type": "git",
     "url": "https://github.com/sophapojul/modal-apo.git"
@@ -8,32 +8,42 @@
     "name": "Pascal Allau",
     "email": "pascal.allau@zohomail.eu"
   },
+  "private": false,
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.5.1",
   "description": "A simple modal component for React",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "types": "dist/index.d.ts",
   "type": "module",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src",
-    "index.d.ts"
+    "dist"
   ],
   "keywords": [
-    "modal","alert","confirm","popup","dialog","react"
+    "modal",
+    "alert",
+    "confirm",
+    "popup",
+    "dialog",
+    "react",
+    "react-component"
   ],
   "scripts": {
-    "build": "tsup src/index.tsx --format cjs,esm --dts"
+    "build": "rm -rf dist && tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
   },
-  "dependencies": {
-    "react": "^18.2.0",
+  "peerDependencies": {
+    "react": "^18.0.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tsup": "^6.7.0",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "styled-components": "^5.3.10"
   }
 }
