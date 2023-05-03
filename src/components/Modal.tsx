@@ -40,13 +40,8 @@ const Content = styled.div`
 `;
 
 const Body = styled.div`
-  padding: 10px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 `;
 
